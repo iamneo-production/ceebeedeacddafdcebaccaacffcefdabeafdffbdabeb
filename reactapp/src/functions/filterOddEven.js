@@ -22,5 +22,10 @@ export const filterEven=(...arr)=>
 }
 export const generateRandomList=(n=7)=>
 {
-    let res
+    let res=[];
+    for(let i=0;i<n;i++)
+    {
+        res.push(Math.floor(Math.random()*100));
+    }
+    return res;
 }
